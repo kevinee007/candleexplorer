@@ -43,7 +43,7 @@
     "redux": "^4.0.1",
     "redux-saga": "^1.0.2",
     "redux-thunk": "^2.2.0",
-    "rmwc": "1.6.2",
+    "rmwc": "1.9.4",
     "styled-components": "4.2.0",
     "unstated": "2.1.1",
     "url-search-params-polyfill": "5.1.0",
