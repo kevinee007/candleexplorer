@@ -47,7 +47,8 @@
     "styled-components": "4.2.0",
     "unstated": "2.1.1",
     "url-search-params-polyfill": "5.1.0",
-    "web3": "^1.2.6"
+    "web3": "^1.2.6",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "build": "npm run -s build:web",
@@ -61,7 +62,9 @@
     "postbuild": "cp build/index.html build/404.html",
     "serve": "serve -s build",
     "dev": "cross-env PORT=3001 react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "build": {
     "appId": "org.livepeer.livepeer-protocol-explorer",
@@ -87,5 +90,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
